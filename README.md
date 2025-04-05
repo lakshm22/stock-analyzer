@@ -39,25 +39,19 @@
 ### 🗂️ Project Structure
 
 MudraVridhiAI/
-├── app/
-│   ├── main.py              # Streamlit main app
-│   └── components/          # Reusable UI components (charts, widgets)
-│
-├── data/
-│   └── raw/                 # Raw downloaded stock data (CSV/JSON)
-│   └── processed/           # Cleaned and transformed data
-│
-├── models/
-│   ├── stock_predictor.pkl  # Saved ML models
-│   └── training/            # Model training scripts
-│
-├── notebooks/
-│   └── exploration.ipynb    # Jupyter notebooks for EDA/experiments
-│
-├── utils/
-│   ├── indicators.py        # RSI, MACD, etc.
-│   └── fetch_data.py        # Stock data fetching and preprocessing
-│
-├── requirements.txt         # Python dependencies
-├── README.md                # Project documentation
-└── .gitignore               # Files to exclude from version control
+├── app/            # Streamlit app files
+├── data/           # Stock data
+├── models/         # ML models
+├── notebooks/      # Jupyter experiments
+├── utils/          # Helper scripts
+├── requirements.txt
+└── README.md
+
+---
+
+📄 License
+Licensed under the **MIT License**.
+
+---
+
+*"Made with 🤍 by Laksh"*
