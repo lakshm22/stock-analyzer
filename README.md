@@ -49,14 +49,15 @@ Whether you're a beginner learning ML or a data nerd tracking stocks, this app g
 
 ### 🗂️ Project Structure
 
-MudraVridhiAI/
 StockAnalyzer/ 
 ├── .gitignore 
 ├── LICENSE 
 ├── README.md 
 ├── SECURITY.md
+├── installation.txt
 ├── requirements.txt 
-└── stock-analyzer.py
+├── stock-analyzer.py
+└── troubleshooting.txt
 
 ---
 
