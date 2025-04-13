@@ -28,24 +28,22 @@
 
 ### 🔧 Tech Stack
 
-- Python
-- Scikit-learn, Pandas, NumPy
-- Streamlit
-- yFinance / Alpha Vantage API
-- Matplotlib / Plotly
+- **Language**: Python 3.x  
+- **Libraries**: `yfinance`, `pandas`, `matplotlib`  
+- **Platform**: Anaconda Navigator (Spyder or JupyterLab)  
+- **Version Control**: Git & GitHub
 
 ---
 
 ### 🗂️ Project Structure
 
 MudraVridhiAI/
-├── app/            # Streamlit app files
-├── data/           # Stock data
-├── models/         # ML models
-├── notebooks/      # Jupyter experiments
-├── utils/          # Helper scripts
-├── requirements.txt
-└── README.md
+StockAnalyzer/ 
+├── .gitignore 
+├── LICENSE 
+├── README.md 
+├── stock_analyzer.py 
+└── requirements.txt
 
 ---
 
