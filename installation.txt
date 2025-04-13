@@ -1,0 +1,46 @@
+# Installation Guide for Stock Analyzer
+
+## Prerequisites
+Before running the Stock Analyzer script, ensure you have the following installed:
+
+- Python (version 3.6 or higher)
+- pip (Python package manager)
+
+## Step 1: Clone the Repository
+If you haven't cloned the repository yet, run the following command in your terminal (replace the URL with your GitHub repo URL):
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+
+## Step 2: Navigate to the Project Directory
+Once the repository is cloned, navigate into your project directory:
+
+cd your-repo-name
+
+## Step 3: Install Dependencies
+Install all the necessary dependencies by running:
+
+pip install -r requirements.txt
+
+## Step 4: Install Streamlit (if not already installed)
+Streamlit is required to run the app. To install Streamlit, run:
+
+pip install streamlit
+
+## Step 5: Run the Stock Analyzer Script
+Streamlit is required to run the app. To install Streamlit, run:
+
+To run the Stock Analyzer app:
+
+### Navigate to the folder where your script is located:
+
+In your terminal, make sure you are in the same folder where the stock-analyzer.py script is located. You can confirm by running ls (on Mac/Linux) or dir (on Windows), which will list the files in the current directory. You should see stock-analyzer.py in the list.
+
+### Run the Streamlit command:
+
+Once you're in the correct directory, run the following command in your terminal:
+
+streamlit run stock-analyzer.py
+
+This will launch the Streamlit app and automatically open it in your default web browser.
+
