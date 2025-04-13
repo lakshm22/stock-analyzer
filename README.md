@@ -7,7 +7,7 @@
 
 ## 🔍 Overview
 
-**Stock Analyzer** is a powerful, interactive web app built with **Python**, **Streamlit**, and **Machine Learning** to analyze and predict stock prices. It also provides insightful financial metrics like **Profit Margin** and **Volatility (Risk %)** to help you make smarter investment decisions.
+**Stock Analyzer** is a simple interactive web app built with **Python**, **Streamlit**, and **Machine Learning** to analyze and predict stock prices. It also provides insightful financial metrics like **Profit Margin** and **Volatility (Risk %)** to help you make smarter investment decisions.
 
 Whether you're a beginner learning ML or a data nerd tracking stocks, this app gives you a clean, intuitive interface with real-world data.
 
