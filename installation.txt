@@ -1,4 +1,4 @@
-# Installation Guide for Stock Analyzer
+Installation Guide for Stock Analyzer
 
 ## Prerequisites
 Before running the Stock Analyzer script, ensure you have the following installed:
