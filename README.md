@@ -55,8 +55,8 @@ StockAnalyzer/
 ├── LICENSE 
 ├── README.md 
 ├── SECURITY.md
-├── stock_analyzer.py 
-└── requirements.txt
+├── requirements.txt 
+└── stock-analyzer.py
 
 ---
 
