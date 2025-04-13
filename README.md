@@ -21,7 +21,7 @@ Whether you're a beginner learning ML or a data nerd tracking stocks, this app g
 - 💰 Calculates **Profit Margin**
 - ⚠️ Computes **Risk Percentage (Volatility)**
 - 📅 Daily-wise time analysis
-- 💹 Dynamic graph with proper time (Days) and price (USD) labels
+- 💹 Dynamic graph with proper time (Days/Months) and price (USD/INR) labels
 
 ---
 
