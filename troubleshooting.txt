@@ -1,0 +1,123 @@
+# Troubleshooting Guide for Stock Analyzer
+
+This guide helps you resolve common issues that may occur while installing or running the Stock Analyzer app.
+
+---
+
+## ❌ Issue: "ModuleNotFoundError"
+
+### Error Message:
+ModuleNotFoundError: No module named 'streamlit'
+
+
+### Solution:
+This means a required package is not installed. Install it using pip:
+```bash
+pip install streamlit
+
+Replace *streamlit* with any other missing package name if needed.
+
+---
+
+## ❌ Issue: "ValueError" or Shape Errors
+
+### Error Message:
+ValueError: Found array with dim 3. None expected <= 2.
+
+
+### Solution:
+This happens due to improper array reshaping. Ensure any model input/output is reshaped like:
+.reshape(-1, 1)
+
+If you're modifying the code, double-check reshaping before using *inverse_transform().*
+
+---
+
+## ❌ Issue: Streamlit App Not Opening in Browser
+
+## Cause:
+Sometimes the browser doesn’t open automatically.
+
+
+### Solution:
+Check the terminal for a local URL (e.g., http://localhost:8501) and open it manually in your browser.
+
+Make sure no other app is using port 8501. You can change the port using:
+streamlit run stock-analyzer.py --server.port 8502
+
+---
+
+## ❌ Issue: "KeyError" for Missing Columns
+
+### Error Message:
+KeyError: 'High'
+
+
+### Solution:
+This means a column you're trying to access does not exist in the dataset.
+Make sure your fetch_stock_data() function retrieves valid stock data.
+
+Check column names using:
+print(data.columns)
+
+and adjust accordingly.
+
+---
+
+## ❌ Issue: "Permission Denied" or Access Errors on Windows
+
+## Cause:
+Trying to run or install packages without admin rights.
+
+
+### Solution:
+- Run your terminal or command prompt as Administrator. On Windows:
+- Search for "cmd" or "Anaconda Prompt"
+- Right-click > "Run as Administrator"
+
+---
+
+## ❌ Issue: Git Not Recognized
+
+### Error Message:
+'git' is not recognized as an internal or external command
+
+
+### Solution:
+You don't have Git installed or it's not added to PATH.
+- Install Git: https://git-scm.com/downloads
+- Restart your terminal after installation.
+
+---
+
+## ❌ Issue: App Won’t Load Data
+
+### Cause:
+- Invalid ticker symbol.
+- API rate limits from Yahoo Finance
+
+
+### Solution:
+- Double-check the ticker symbol (e.g., use "AAPL" for Apple).
+- Retry after a few minutes if you suspect rate limiting.
+
+---
+
+🛠 General Tips
+- Use a virtual environment to avoid dependency conflicts:
+python -m venv env
+source env/bin/activate  # On Linux/macOS
+env\Scripts\activate     # On Windows
+
+- Always install required libraries:
+pip install -r requirements.txt
+
+- Use *print()* or *st.write()* statements to debug.
+
+---
+
+Still stuck? Feel free to create a GitHub Issue in the repository and describe your problem.
+
+---
+
+Let me know if you want to tailor this for beginners, or include visuals or commands for Anaconda users too!
