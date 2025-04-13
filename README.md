@@ -28,7 +28,7 @@
 
 ### 🔧 Tech Stack
 
-- **Language**: Python 3.x  
+- **Language**: Python 3.13.2 
 - **Libraries**: `yfinance`, `pandas`, `matplotlib`  
 - **Platform**: Anaconda Navigator (Spyder or JupyterLab)  
 - **Version Control**: Git & GitHub
