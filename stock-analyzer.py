@@ -43,6 +43,9 @@ def build_model(X_train, y_train):
     model.fit(X_train, y_train)
     return model
 
+def test_sample():
+    assert 1 + 1 == 2
+    
 # Streamlit app to visualize and predict stock price
 def run_app():
     st.title("📈 Stock Price Analyzer")
