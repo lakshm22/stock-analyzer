@@ -22,6 +22,7 @@ Whether you're a beginner learning ML or a data nerd tracking stocks, this app g
 - ⚠️ Computes **Risk Percentage (Volatility)**
 - 📅 Daily-wise time analysis
 - 💹 Dynamic graph with proper time (Days/Months) and price (USD/INR) labels
+- 💱 Currency conversion (USD->INR & Vice Versa) facilitated via **forex-python**
 
 ---
 
