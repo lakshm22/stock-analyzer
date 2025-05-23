@@ -89,12 +89,8 @@ def run_app():
     initial_price = scaler.inverse_transform(np.array(initial_scaled).reshape(1, -1))[0][0]
     final_price = scaler.inverse_transform(np.array(final_scaled).reshape(1, -1))[0][0]
 
-    if final_price >= initial_price:
-    profit_margin = ((final_price - initial_price) / initial_price) * 100
-    loss_margin = 0
-    else:
-    loss_margin = ((initial_price - final_price) / initial_price) * 100
-    profit_margin = 0
+    profit_margin = abs((final_price - initial_price) / initial_price) * 100
+
 
     close_prices = scaler.inverse_transform(data['Close'].values.reshape(-1, 1)).flatten()
     daily_returns = np.diff(close_prices) / close_prices[:-1]
@@ -102,7 +98,6 @@ def run_app():
 
     st.markdown("### 📊 Financial Metrics")
     st.write(f"*Profit Margin:* {profit_margin:.2f}%")
-    st.write(f"*Loss Margin:* {loss_margin:.2f}%")
     st.write(f"*Risk (Volatility):* {risk_percentage:.2f}%")
 
 
