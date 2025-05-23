@@ -48,6 +48,7 @@ def test_sample():
     
 # Streamlit app to visualize and predict stock price
 def run_app():
+    
     st.title("📈 Stock Price Analyzer")
     
     # User inputs
@@ -80,7 +81,7 @@ def run_app():
     # Ensure 2D shape for inverse transform
     predicted_price = scaler.inverse_transform(predicted_price.reshape(-1, 1))
     y_test = scaler.inverse_transform(y_test.reshape(-1, 1))
-
+   
     # === Financial Metrics (with corrected 2D reshape) ===
     initial_scaled = data['Close'].iloc[0]
     final_scaled = data['Close'].iloc[-1]
