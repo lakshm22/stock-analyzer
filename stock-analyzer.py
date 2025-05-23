@@ -114,8 +114,8 @@ def run_app():
         predicted_price = [convert_currency(p[0], "USD", "INR") for p in predicted_price]
         y_test = [convert_currency(p[0], "USD", "INR") for p in y_test]
         currency_symbol = "₹"
-else:
-    currency_symbol = "$"
+    else:
+        currency_symbol = "$"
 
 
     st.markdown("### 📊 Financial Metrics")
