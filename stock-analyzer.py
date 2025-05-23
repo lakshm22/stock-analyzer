@@ -89,7 +89,7 @@ def run_app():
     initial_price = scaler.inverse_transform(np.array(initial_scaled).reshape(1, -1))[0][0]
     final_price = scaler.inverse_transform(np.array(final_scaled).reshape(1, -1))[0][0]
     
-    profit_margin = max(0, min(100, ((final_price - initial_price) / initial_price) * 100))
+   profit_margin = abs((final_price - initial_price) / initial_price) * 100
 
     close_prices = scaler.inverse_transform(data['Close'].values.reshape(-1, 1)).flatten()
     daily_returns = np.diff(close_prices) / close_prices[:-1]
