@@ -108,12 +108,12 @@ def run_app():
 
     # Convert profit and prices if INR is selected
     if currency == "INR":
-    initial_price = convert_currency(initial_price, "USD", "INR")
-    final_price = convert_currency(final_price, "USD", "INR")
-    close_prices = [convert_currency(p, "USD", "INR") for p in close_prices]
-    predicted_price = [convert_currency(p[0], "USD", "INR") for p in predicted_price]
-    y_test = [convert_currency(p[0], "USD", "INR") for p in y_test]
-    currency_symbol = "₹"
+        initial_price = convert_currency(initial_price, "USD", "INR")
+        final_price = convert_currency(final_price, "USD", "INR")
+        close_prices = [convert_currency(p, "USD", "INR") for p in close_prices]
+        predicted_price = [convert_currency(p[0], "USD", "INR") for p in predicted_price]
+        y_test = [convert_currency(p[0], "USD", "INR") for p in y_test]
+        currency_symbol = "₹"
 else:
     currency_symbol = "$"
 
