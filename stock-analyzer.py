@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
+from forex_python.converter import CurrencyRates
 
 # Function to fetch stock data
 def fetch_stock_data(ticker, start_date, end_date):
@@ -45,6 +46,15 @@ def build_model(X_train, y_train):
 
 def test_sample():
     assert 1 + 1 == 2
+
+def convert_currency(amount, from_currency="USD", to_currency="INR"):
+    c = CurrencyRates()
+    try:
+        converted_amount = c.convert(from_currency, to_currency, amount)
+        return converted_amount
+    except Exception as e:
+        st.warning(f"Currency conversion failed: {e}")
+        return amount  # Fallback to original
     
 # Streamlit app to visualize and predict stock price
 def run_app():
@@ -96,6 +106,18 @@ def run_app():
     daily_returns = np.diff(close_prices) / close_prices[:-1]
     risk_percentage = np.std(daily_returns) * 100
 
+    # Convert profit and prices if INR is selected
+    if currency == "INR":
+    initial_price = convert_currency(initial_price, "USD", "INR")
+    final_price = convert_currency(final_price, "USD", "INR")
+    close_prices = [convert_currency(p, "USD", "INR") for p in close_prices]
+    predicted_price = [convert_currency(p[0], "USD", "INR") for p in predicted_price]
+    y_test = [convert_currency(p[0], "USD", "INR") for p in y_test]
+    currency_symbol = "₹"
+else:
+    currency_symbol = "$"
+
+
     st.markdown("### 📊 Financial Metrics")
     st.write(f"*Profit Margin:* {profit_margin:.2f}%")
     st.write(f"*Risk (Volatility):* {risk_percentage:.2f}%")
@@ -116,7 +138,7 @@ def run_app():
     # Add title and labels
     ax.set_title(f'{ticker} Stock Price Prediction', fontsize=14)
     ax.set_xlabel('Time', fontsize=12)
-    ax.set_ylabel(f'Stock Price ({currency})', fontsize=12)
+    ax.set_ylabel(f'Stock Price ({currency_symbol})', fontsize=12)
 
     # Add gridlines for better readability
     ax.grid(True, which='both', linestyle='--', linewidth=0.5)
