@@ -4,4 +4,4 @@ yfinance
 streamlit
 matplotlib
 scikit-learn
-forex-python>=1.8
+forex-python
