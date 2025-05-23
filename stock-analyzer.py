@@ -110,8 +110,8 @@ def run_app():
 
     # Highlight the first and last points for better visualization
     ax.scatter([0, len(y_test)-1], [y_test[0], predicted_price[-1]], color='green', zorder=5)
-    ax.text(0, y_test[0], f'{y_test[0][0]:.2f} {currency}', color='green', fontsize=10, verticalalignment='bottom')
-    ax.text(len(y_test)-1, predicted_price[-1][0], f'{predicted_price[-1][0]:.2f} {currency}', color='green', fontsize=10, verticalalignment='top')
+    ax.text(0, y_test[0], f'{y_test[0][0]:.2f} USD', color='green', fontsize=10, verticalalignment='bottom')
+    ax.text(len(y_test)-1, predicted_price[-1][0], f'{predicted_price[-1][0]:.2f} USD', color='green', fontsize=10, verticalalignment='top')
 
     # Add title and labels
     ax.set_title(f'{ticker} Stock Price Prediction', fontsize=14)
