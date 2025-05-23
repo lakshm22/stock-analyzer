@@ -90,10 +90,10 @@ def run_app():
     final_price = scaler.inverse_transform(np.array(final_scaled).reshape(1, -1))[0][0]
 
     if final_price >= initial_price:
-    profit_margin = ((final_price - initial_price) / initial_price) * 100
+    profit_margin = abs((final_price - initial_price) / initial_price) * 100
     loss_margin = 0
     else:
-    loss_margin = ((initial_price - final_price) / initial_price) * 100
+    loss_margin = abs((initial_price - final_price) / initial_price) * 100
     profit_margin = 0
 
     close_prices = scaler.inverse_transform(data['Close'].values.reshape(-1, 1)).flatten()
