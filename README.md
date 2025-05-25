@@ -7,7 +7,7 @@
 
 ## 🔍 Overview
 
-**Stock Analyzer** is a simple interactive web app built with **Python**, **Streamlit**, and **Machine Learning** to analyze and predict stock prices. It also provides insightful financial metrics like **Profit Margin** and **Volatility (Risk %)** to help you make smarter investment decisions.
+Stock Analyser is a simple interactive web app built with Python, Streamlit, and machine learning to analyse and predict stock prices. It also provides insightful financial metrics like Profit Margin and Volatility (Risk percentage) to help you make smarter investment decisions.
 
 Whether you're a beginner learning ML or a data nerd tracking stocks, this app gives you a clean, intuitive interface with real-world data.
 
@@ -17,12 +17,11 @@ Whether you're a beginner learning ML or a data nerd tracking stocks, this app g
 
 - 📦 Fetches historical stock data using [Yahoo Finance](https://finance.yahoo.com/)
 - 📊 Predicts future stock prices using **Random Forest Regressor**
-- 📈 Visualizes **actual vs. predicted stock prices**
+- 📈 Visualises **actual vs. predicted stock prices**
 - 💰 Calculates **Profit Margin**
 - ⚠️ Computes **Risk Percentage (Volatility)**
-- 📅 Daily-wise time analysis
+- 📅 Daily time analysis
 - 💹 Dynamic graph with proper time (Days/Months) and price (USD/INR) labels
-- 💱 Currency conversion (USD->INR & Vice Versa) facilitated via **forex-python**
 
 ---
 
