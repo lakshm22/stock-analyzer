@@ -9,7 +9,7 @@
 
 [Stock Price Analyzer](https://stock-analyzer-du9a.onrender.com) is a simple interactive web app built with Python, Streamlit, and machine learning to analyse and predict stock prices. It also provides insightful financial metrics like Profit Margin and Volatility (Risk percentage) to help you make smarter investment decisions.
 
-Whether you're a beginner learning ML or a data nerd tracking stocks, this app gives you a clean, intuitive interface with real-world data.
+Whether you are a beginner learning ML or a data nerd tracking stocks, this app gives you a clean, intuitive interface with real-world data.
 
 ---
 
@@ -23,27 +23,17 @@ Whether you're a beginner learning ML or a data nerd tracking stocks, this app g
 - 💹 Dynamic graph with proper time (Days/Months) and price (USD) label
 - 🚀 Deployed the model using [Render](https://dashboard.render.com/)
 
----
-
-### 🔧 Tech Stack
-
-- Python 
-- Streamlit 
-- Scikit-learn 
-- yFinance 
-- Matplotlib 
-- NumPy + Pandas 
 
 ---
 
-### ---
 
 ### 🔧 Tech Stack
 
 - **Language**: Python 3.13.2 
-- **Libraries**: `yfinance`, `pandas`, `matplotlib`  
+- **Libraries**: `yfinance`, `pandas`, `matplotlib`, `numpy`, `scikit-learn`, `streamlit`
 - **Platform**: Anaconda Navigator (Spyder or JupyterLab)  
 - **Version Control**: GitHub
+
 
 ---
 
