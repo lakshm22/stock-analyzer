@@ -1,4 +1,4 @@
-# 📈 Stock Analyzer
+# 📈 Stock Price Analyzer
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-ff4b4b)
