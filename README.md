@@ -53,7 +53,6 @@ StockAnalyzer/
 ├── .gitignore 
 ├── LICENSE 
 ├── README.md 
-├── SECURITY.md
 ├── installation.txt
 ├── requirements.txt 
 ├── stock-analyzer.py
