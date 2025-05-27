@@ -2,7 +2,7 @@
 
 ## 🛡 Reporting a Vulnerability
 
-We take security seriously. If you discover any security vulnerabilities in **MudraVridhiAI**, please follow the steps below:
+We take security seriously. If you discover any security vulnerabilities in **stock-analyzer**, please follow the steps below:
 
 - **Do not** disclose it publicly.
 - Instead, please report it **privately** by sending an email to: `lakshitham022@gmail.com` *(replace with your email if needed)*.
@@ -30,4 +30,4 @@ We follow standard best practices:
 
 ---
 
-Thank you for helping make **MudraVridhiAI** more secure!
+Thank you for helping make **stock-analyzer** more secure!
