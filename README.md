@@ -20,8 +20,8 @@ Whether you're a beginner learning ML or a data nerd tracking stocks, this app g
 - 📈 Visualises **actual vs. predicted stock prices**
 - 💰 Calculates **Profit Margin**
 - ⚠️ Computes **Risk Percentage (Volatility)**
-- 📅 Daily time analysis
-- 💹 Dynamic graph with proper time (Days/Months) and price (USD/INR) labels
+- 💹 Dynamic graph with proper time (Days/Months) and price (USD) label
+- 🚀 Deployed the model using **Render**
 
 ---
 
@@ -43,7 +43,7 @@ Whether you're a beginner learning ML or a data nerd tracking stocks, this app g
 - **Language**: Python 3.13.2 
 - **Libraries**: `yfinance`, `pandas`, `matplotlib`  
 - **Platform**: Anaconda Navigator (Spyder or JupyterLab)  
-- **Version Control**: Git & GitHub
+- **Version Control**: GitHub
 
 ---
 
