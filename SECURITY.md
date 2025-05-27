@@ -5,7 +5,7 @@
 We take security seriously. If you discover any security vulnerabilities in **stock-analyzer**, please follow the steps below:
 
 - **Do not** disclose it publicly.
-- Instead, please report it **privately** by sending an email to: `lakshitham022@gmail.com` *(replace with your email if needed)*.
+- Instead, please report it **privately** by sending an email to: `lakshitham022@gmail.com`.
 - Include the following in your report:
   - A detailed description of the vulnerability.
   - Steps to reproduce the issue.
