@@ -31,7 +31,7 @@ Whether you are a beginner learning ML or a data nerd tracking stocks, this app 
 
 - **Language**: Python 3.13.2 
 - **Libraries**: `yfinance`, `pandas`, `matplotlib`, `numpy`, `scikit-learn`, `streamlit`
-- **Platform**: Anaconda Navigator (Spyder or JupyterLab)  
+- **Platform**: Anaconda Navigator (Jupyter Notebook)  
 - **Version Control**: GitHub
 
 
