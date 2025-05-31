@@ -21,6 +21,7 @@ Whether you are a beginner learning ML or a data nerd tracking stocks, this app 
 - 💰 Calculates **Profit Margin**
 - ⚠️ Computes **Risk Percentage (Volatility)**
 - 💹 Dynamic graph with proper time (Days/Months) and price (USD) label
+- 🌐 An interactive dashboard powered by **Streamlit**
 - 🚀 Deployed the model using [Render](https://dashboard.render.com/)
 
 
