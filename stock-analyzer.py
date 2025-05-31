@@ -55,7 +55,6 @@ def run_app():
     ticker = st.text_input("Enter Stock Ticker (e.g., AAPL, MSFT):", "AAPL")
     start_date = st.date_input("Select Start Date", pd.to_datetime('2020-01-01'))
     end_date = st.date_input("Select End Date", pd.to_datetime('2022-01-01'))
-    time_unit = st.selectbox("Select Time Unit", ["DAYS", "MONTHS"])  # Select time unit for X-axis
     
     # Fetch and preprocess stock data
     data = fetch_stock_data(ticker, start_date, end_date)
@@ -115,7 +114,7 @@ def run_app():
 
     # Add title and labels
     ax.set_title(f'{ticker} Stock Price Prediction', fontsize=14)
-    ax.set_xlabel('Time', fontsize=12)
+    ax.set_xlabel('Time (DAYS)', fontsize=12)
     ax.set_ylabel('Stock Price (USD)', fontsize=12)
 
     # Add gridlines for better readability
@@ -125,14 +124,8 @@ def run_app():
     ax.legend(loc='upper left', fontsize=12)
 
     # Customize x-axis ticks (time in DAYS or MONTHS)
-    if time_unit == "DAYS":
-        ax.set_xticks(np.arange(0, len(y_test), step=len(y_test)//5))
-        ax.set_xticklabels([str(i) for i in np.arange(0, len(y_test), step=len(y_test)//5)])
-    elif time_unit == "MONTHS":
-        # Assuming monthly data, we use the Date index to show months
-        data['Month'] = data['Date'].dt.strftime('%Y-%m')
-        ax.set_xticks(np.arange(0, len(data), step=len(data)//5))
-        ax.set_xticklabels(data['Month'][::len(data)//5])
+    ax.set_xticks(np.arange(0, len(y_test), step=len(y_test)//5))
+    ax.set_xticklabels([str(i) for i in np.arange(0, len(y_test), step=len(y_test)//5)])
 
     # Display the plot
     st.pyplot(fig)
