@@ -36,25 +36,4 @@ Whether you are a beginner learning ML or a data nerd tracking stocks, this app 
 - **Version Control**: GitHub
 
 
----
 
-### 🗂️ Project Structure
-
-StockAnalyzer/ 
-├── .gitignore 
-├── LICENSE 
-├── README.md 
-├── installation.txt
-├── requirements.txt 
-├── stock-analyzer.py
-└── troubleshooting.txt
-
----
-
-### 📄 License
-
-Licensed under the **MIT License**.
-
----
-
-*"Made with 🤍 by Laksh"*
